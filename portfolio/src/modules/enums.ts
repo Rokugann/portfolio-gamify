@@ -1,0 +1,2 @@
+export enum BtnState { ACTIVE, FHIDDEN, UNACTIVE };
+export enum SectionState { MESECTION, CONTACTSECTION, CAROUSELSECTION, NOSECTION}

@@ -1,0 +1,38 @@
+import firebaseChatAppCardDisplay from "./cardDisplay.svg"
+import firebaseChatAppDisplay from "./display.svg"
+
+function firebaseChatAppProjectView()
+{
+    return(
+        <div>firebaseChatAppProject PlaceHolder</div>
+    )
+}
+
+function firebaseChatAppProjectCode()
+{
+    return (
+        <div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lacus enim. Aenean id magna auctor, molestie ligula sed, imperdiet ipsum. Proin malesuada quam felis, sit amet sagittis metus finibus ac. Aenean in venenatis libero, at varius urna. Proin faucibus lobortis orci sit amet rhoncus. Donec pharetra neque at velit lobortis vulputate. Donec interdum luctus enim, eget vulputate augue convallis euismod. Pellentesque sagittis nisl tellus, bibendum hendrerit quam tempus vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas efficitur odio a erat aliquam, nec rhoncus purus posuere.
+
+Sed justo nibh, auctor non justo sit amet, facilisis facilisis turpis. In hac habitasse platea dictumst. Donec non ornare turpis, a iaculis ligula. Vestibulum mollis interdum quam eget blandit. Proin eleifend nunc sollicitudin, vehicula ante eget, rutrum ipsum. Nam ornare consectetur iaculis. Nulla tempus elementum rutrum. Quisque fringilla orci odio, ac dictum nisi maximus suscipit. Sed rutrum nunc dapibus, blandit est tincidunt, dictum lacus.
+
+Integer dapibus elit a massa lacinia, a malesuada metus blandit. Praesent pharetra tellus ut orci tincidunt euismod. Etiam id interdum sem. Aliquam lectus ante, pretium eu sapien eu, euismod luctus lectus. Nunc laoreet finibus massa, non interdum nulla accumsan quis. Ut ultricies leo sed ligula faucibus, a cursus tellus dignissim. Nunc id purus tellus. Vestibulum sit amet tellus odio. Integer fringilla nibh velit, eu mattis risus eleifend eu. Sed massa quam, fermentum congue feugiat ac, facilisis non tortor. Integer erat arcu, sollicitudin sed enim vel, dapibus porta augue.
+
+Ut vel nunc eu nisl maximus venenatis non at diam. Integer aliquet placerat arcu quis imperdiet. Mauris condimentum risus in leo mollis, mollis efficitur risus euismod. Nulla ac tortor semper, accumsan ipsum vitae, viverra metus. Aliquam auctor, erat at fermentum fermentum, velit tortor vehicula nisi, volutpat aliquet risus orci ac tortor. Quisque non augue sem. Praesent vitae sagittis lectus, quis sagittis turpis. Aliquam augue eros, auctor id rutrum id, bibendum a neque. Donec sed fringilla mi, ultrices commodo urna. Curabitur erat nibh, mollis at gravida nec, pharetra vitae augue. Nam aliquet libero enim, id fermentum libero venenatis non. Morbi ut erat fermentum, sagittis tellus ac, vestibulum sapien. Praesent ullamcorper ex erat, euismod condimentum lorem tempor eget. Sed augue diam, ultricies et pharetra vitae, hendrerit in felis. Donec neque sapien, porta eu efficitur et, finibus at nisl.
+
+Maecenas accumsan massa eget iaculis dignissim. In a luctus arcu, ac faucibus turpis. Aenean et nisi at nunc maximus consequat. Suspendisse sapien nulla, rhoncus non urna non, fringilla consectetur ex. Quisque ac lacinia leo. Etiam hendrerit, eros at euismod placerat, neque tortor cursus eros, id luctus risus dolor id est. Curabitur condimentum molestie efficitur. Nullam maximus, magna non dictum auctor, mauris sapien ultricies libero, at tincidunt arcu mauris cursus lorem. Quisque dui orci, interdum congue dui in, elementum suscipit libero. Suspendisse nibh ante, eleifend id libero sit amet, sagittis sagittis elit. Sed lacinia est non dui malesuada, non gravida ex varius. Cras egestas, orci ac tempus interdum, lectus leo rutrum risus, eget suscipit tellus tellus eu justo. In nunc felis, sollicitudin sed interdum in, rutrum vitae neque. Integer sodales arcu non risus sollicitudin iaculis. Integer velit ex, placerat ac arcu sed, pretium laoreet augue. Pellentesque fringilla felis sit amet justo porttitor ullamcorper.
+
+Cras mollis ipsum non eleifend cursus. Cras erat neque, molestie eu tellus ac, mollis pellentesque mi. Sed porttitor ex convallis sapien ullamcorper, vitae laoreet dui ullamcorper. Pellentesque blandit finibus efficitur. Ut auctor, leo in elementum maximus, dolor mauris gravida metus, a lobortis urna augue eget ligula. In sit amet tellus vel augue consequat rhoncus vel non metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus placerat lorem quis nisi faucibus, eget dictum velit porttitor. Etiam gravida volutpat egestas. Sed aliquet mi eu accumsan posuere. Cras congue iaculis est, ut dignissim augue lobortis quis. Cras at ipsum sollicitudin, ultricies ex in, tristique ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse facilisis mi nec quam volutpat porta. Praesent et eros vel nulla tristique mattis eget non ipsum.
+
+Pellentesque magna turpis, sagittis non nibh eget, facilisis finibus nulla. Sed feugiat non velit in pharetra. Fusce fermentum bibendum metus, id tempor nibh cursus in. Praesent placerat consectetur ligula, vel commodo nulla tristique ultrices. Nam consectetur luctus sodales. Phasellus rutrum facilisis congue. Quisque euismod nulla vitae tellus sollicitudin, sed euismod odio fringilla. Morbi ac sodales est, ut molestie diam. Nam non lacus vel ex commodo bibendum at vel turpis.
+
+Mauris quis tellus nec erat tempor ultrices vitae eu enim. Sed mattis velit in viverra sodales. Nunc eget aliquet urna. Nulla dapibus, dui vel lacinia egestas, mi turpis faucibus orci, eget scelerisque ligula erat ut ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce elementum elit pretium nunc lobortis, vitae ultricies quam luctus. Praesent eu nulla eleifend, congue nisl id, hendrerit ex. Etiam dapibus pellentesque justo non consectetur. Praesent tincidunt nec nibh posuere suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent accumsan interdum fringilla. Integer faucibus feugiat leo nec scelerisque. Proin quis dolor dapibus ligula lacinia scelerisque. Donec consequat venenatis neque.
+
+Sed ornare a orci et tincidunt. Curabitur ac mollis metus, eu congue felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quis velit eu nulla imperdiet molestie. Sed sodales quis enim quis elementum. Morbi laoreet leo ut augue pellentesque interdum. Curabitur pulvinar facilisis feugiat. Sed pulvinar porttitor ultricies. Donec efficitur ultricies venenatis. Sed tempus gravida lorem vel suscipit. Suspendisse augue enim, tempor vitae tellus in, ultrices iaculis ex. Sed pellentesque justo a est lobortis rutrum. Cras quis posuere neque. Integer arcu sapien, luctus vel orci sed, mattis faucibus quam.
+
+Fusce odio felis, pharetra et commodo sit amet, ultrices nec dui. Aenean tincidunt, enim a posuere vehicula, sapien magna mollis diam, a tempus leo dui ut urna. Nam pretium mauris at dolor scelerisque hendrerit. Cras ac ligula id nisl consequat porta. Curabitur congue leo nec augue egestas, quis malesuada leo posuere. Maecenas sodales enim mauris, ac lobortis elit pharetra et. Nam congue ligula lectus, eu ultrices lectus vestibulum ut. Quisque sodales arcu in tellus posuere vehicula. Nullam interdum orci ligula, in tempor magna congue id. Pellentesque ultricies felis quis est placerat dapibus. </div>
+    )
+}
+
+export {firebaseChatAppProjectView, firebaseChatAppProjectCode, firebaseChatAppCardDisplay,  firebaseChatAppDisplay}
