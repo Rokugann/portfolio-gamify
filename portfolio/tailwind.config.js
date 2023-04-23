@@ -7,13 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'CenterBand': "#2F2F2F",
-        'MainColor': "#2c2c2c",
+        'CenterBand': "#A4A3A3",
+        'MainColor': "#F2F2F2",
+        'MainBtn' :'#D9D9D9',
         'FrontBtn': "#ED3354",
-        'GameBtn': '#6AF000',
-        'BackBtn': '#FAE100',
-        'ContactBtn': '#2FB0D9',
-        'MeBtn': '#403B3C' 
+        'GameBtn': '#91BC18',
+        'BackBtn': '#328BA9',
+        'TechBtn': '#BB8E6E',
+        'MeBtn': '#596E5C',
+        'Idle': '#302E38' 
       },
       backgroundImage: {
         "OctogoneFrame": "url('/public/Vector.svg')"
@@ -26,7 +28,11 @@ export default {
       },
       boxShadow: {
         "leftBold": "-4px 0px 0px #000000",
-        "rightBold": "4px 0px 0px #000000"
+        "rightBold": "4px 0px 0px #000000",
+        "mainBtn": "inset -7px 12px 4px rgba(0, 0, 0, 0.59)"
+      },
+      transitionProperty: {
+        "hoverScale": "width, background-color"
       }
     },
   },

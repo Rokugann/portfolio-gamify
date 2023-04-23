@@ -22,44 +22,16 @@ li
 {
   transform: skew(15deg);
   transition: width 0.25s;
+  transition: color 0.25s;
   box-shadow: -4px 0px 0px #000000, -4px 0px 0px #000000;
 }
 
 .desktopRight 
 {
   transition: width 0.25s;
+/*  transition: color 0.25s;*/
   transform: skew(-15deg);
   box-shadow: 4px 0px 0px #000000, 4px 0px 0px #000000;
-}
-
-.leftSideView
-{
-  padding-top: 11em;
-  padding-left: 8em;
-  height: 400%;
-  width: 28vw;
-  position: absolute;
-  z-index: 1;
-  left: -8em;
-  align-self: center;
-  transform: skew(-15deg);
-}
-
-.leftSideViewSub
-{
-  padding-top: 10em;
-  position: absolute;
-  height: 400%;
-  width: 40vw;
-  z-index: 1;
-  right: -15vw;
-  align-self: center;
-  transform: skew(-15deg);
-}
-
-.leftSideViewContent
-{
-  transform: skew(15deg);
 }
 
 .icon

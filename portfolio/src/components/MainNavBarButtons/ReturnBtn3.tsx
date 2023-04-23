@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { StringBtnProp } from "../../modules/interfaces";
 import MainBtn from "./MainBtn";
 
-let returnBtnClass = " desktopRight z-20 order-4 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer self-center border-hidden rounded-md "
+let returnBtnClass = " desktopRight z-20 order-4 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center border-hidden rounded-md "
 
 function ReturnBtn3({state, setState, previousState}:StringBtnProp)
 {
@@ -21,8 +21,8 @@ function ReturnBtn3({state, setState, previousState}:StringBtnProp)
 		case "MainBtn":
 		className = "hidden" + returnBtnClass
 		break;
-		case "ContactBtn":
-		className = returnBtnClass + "bg-ContactBtn"
+		case "TechBtn":
+		className = returnBtnClass + "bg-TechBtn"
 		break;
 		case "MeBtn":
 		className = returnBtnClass + "bg-MeBtn"

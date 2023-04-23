@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MainBtn from "./MainNavBarButtons/MainBtn";
-import ContactBtn from "./MainNavBarButtons/ContactBtn";
+import TechBtn from "./MainNavBarButtons/TechBtn";
 import MeBtn from "./MainNavBarButtons/MeBtn";
 import BackBtn from "./MainNavBarButtons/BackBtn";
 import FrontBtn from "./MainNavBarButtons/FrontBtn";
@@ -28,7 +28,7 @@ function MainNavBarV2({state, setState, previousState}:MainNavBarProp)
         case "MainBtn":
             className = NavSectionClass + "justify-center"
         break;
-        case "ContactBtn":
+        case "TechBtn":
             className = NavSectionClass + "justify-center"
         break;
         case "MeBtn":
@@ -57,12 +57,11 @@ function MainNavBarV2({state, setState, previousState}:MainNavBarProp)
 
     return(
         <>
-            <main className="absolute inset-0 w-full h-full flex">
-            <section className="flex flex-grow relative my-auto left-0 right-0 justify-center">
-                <div className="absolute z-0 w-[120%] h-[100px] bg-CenterBand overflow-x-hidden self-center drop-shadow-[4px_0_4px_rgba(0,0,0,1)]"></div>
+            <section className="flex flex-grow relative my-auto left-0 right-0 justify-center text-MainColor">
+                <div className="absolute z-0 w-[120%] h-24 bg-CenterBand overflow-x-hidden self-center drop-shadow-[4px_0_4px_rgba(0,0,0,1)]"></div>
                 <span className={className}>
                     <MeBtn state={state} setState={setState} previousState={previousState}/>
-                    <ContactBtn state={state} setState={setState} previousState={previousState}/>
+                    <TechBtn state={state} setState={setState} previousState={previousState}/>
                     <MainBtn state={state} setState={setState} previousState={previousState}/>
                     <BackBtn state={state} setState={setState} previousState={previousState}/>
                     <FrontBtn state={state} setState={setState} previousState={previousState}/>
@@ -72,7 +71,6 @@ function MainNavBarV2({state, setState, previousState}:MainNavBarProp)
                     <ReturnBtn3 state={state} setState={setState} previousState={previousState}/>
                 </span>
             </section>
-            </main>
         </>
     )
 

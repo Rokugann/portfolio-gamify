@@ -1,6 +1,6 @@
 import { StringBtnProp } from "../../modules/interfaces";
 
-let returnBtnClass = " desktopLeft z-20 o-1 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer self-center border-hidden rounded-md "
+let returnBtnClass = " desktopLeft z-20 o-1 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center border-hidden rounded-md "
 
 function ReturnBtn1({state, setState, previousState}:StringBtnProp)
 {
@@ -19,7 +19,7 @@ function ReturnBtn1({state, setState, previousState}:StringBtnProp)
 		case "MainBtn":
 		className = "hidden" + returnBtnClass
 		break;
-		case "ContactBtn":
+		case "TechBtn":
 		className = "hidden" + returnBtnClass
 		break;
 		case "MeBtn":

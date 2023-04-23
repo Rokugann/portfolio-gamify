@@ -1,7 +1,7 @@
 import { StringBtnProp } from "../../modules/interfaces";
 import VerticalCarousel from "../VerticalCarousel";
 
-let thisBtnClass = " desktopRight justify-end self-center w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer mr-[-2em] rounded-md border-hidden order-4 z-30 bg-BackBtn "
+let thisBtnClass = " desktopRight justify-end self-center w-48 h-24 hover:w-64 hover:cursor-pointer transition-hoverScale ease-in-out duration-300  mr-[-2em] rounded-md border-hidden order-4 z-30 bg-Idle hover:bg-BackBtn "
 
 function BackBtn({state, setState, previousState}:StringBtnProp)
 {
@@ -12,7 +12,7 @@ function BackBtn({state, setState, previousState}:StringBtnProp)
 		case "MainBtn":
 		className = thisBtnClass
 		break;
-		case "ContactBtn":
+		case "TechBtn":
 		className = "hidden" + thisBtnClass
 		break;
 		case "MeBtn":

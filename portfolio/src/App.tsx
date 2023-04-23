@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <main className='flex'>
+      <main className="absolute inset-0 w-full h-full flex bg-MainColor">
         <LeftSection state={currentlySelectedID} setState={setCurentlySelectedId} previousState={previouslySelectedID}/>
         <MainNavBarV2 state={currentlySelectedID} setState={setCurentlySelectedId} previousState={previouslySelectedID}/>
         <VerticalCarousel state={currentlySelectedID} setState={setCurentlySelectedId} previousState={previouslySelectedID}/>

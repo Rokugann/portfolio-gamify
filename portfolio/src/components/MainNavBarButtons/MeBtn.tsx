@@ -1,7 +1,7 @@
 import { StringBtnProp } from "../../modules/interfaces";
 import MeView from "../MeView";
 
-let meBtnClass = " desktopLeft z-20 order-0 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer self-center bg-MeBtn border-hidden rounded-md "
+let meBtnClass = " desktopLeft z-20 order-0 w-48 h-24 hover:w-64 hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center bg-Idle hover:bg-MeBtn border-hidden rounded-md "
 
 function MeBtn({state, setState, previousState}:StringBtnProp)
 {
@@ -12,7 +12,7 @@ function MeBtn({state, setState, previousState}:StringBtnProp)
 		case "MainBtn":
 		className = meBtnClass
 		break;
-		case "ContactBtn":
+		case "TechBtn":
 		className = "invisible" + meBtnClass
 		break;
 		case "Mebtn":
@@ -43,15 +43,8 @@ function MeBtn({state, setState, previousState}:StringBtnProp)
         setState("MeBtn");
     }
 
-	if(state != "MeBtn")
-	{
-		return(<button key="MeBtn" type='button' id="MeBtn" className={className}
-                onClick={BtnSelectHandler}>Moi</button>)
-	}
-	else
-	{
-		return(<MeView  state={state} setState={setState} previousState={previousState}/>)
-	}
+	return(<button key="MeBtn" type='button' id="MeBtn" className={className}
+            onClick={BtnSelectHandler}>Moi</button>)
 }
 
 export default MeBtn

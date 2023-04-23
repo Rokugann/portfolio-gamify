@@ -66,11 +66,11 @@ function VCarouselItem({state, setState, index, maxIndex, indexRef, carouselSize
     if(myIndex >= 0 && myIndex <= maxIndex)
     {
         return(
-            <li className={"flex w-[40em] h-[10em] z-20 vcItem vcItem" + myIndex} key={project.id} onClick={carouselClickHandler}>
+            <li className={"flex w-[40em] h-[8em] bg-CenterBand rounded-lg border-2 border-Idle z-20 vcItem vcItem" + myIndex + 
+            " shadow-4xl "} key={project.id} onClick={carouselClickHandler}>
                 <label className="absolute self-center left-[30%] pointer-event-none">
                     {project.id}
                 </label>
-                <img className="" src={project.display ? project.display : placeHolderCardDisplay}/>
             </li>
         )
     }

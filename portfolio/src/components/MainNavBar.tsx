@@ -29,8 +29,8 @@ baseMap.set('MeBtnLeft', {
     className: "hidden",
     btnState: BtnState.FHIDDEN,
 })
-baseMap.set('ContactBtnLeft', {
-    id: 'ContactBtnLeft',
+baseMap.set('TechBtnLeft', {
+    id: 'TechBtnLeft',
     className: "hidden",
     btnState: BtnState.FHIDDEN
 })
@@ -201,7 +201,7 @@ function MainNavBar()
                             className: "hidden"+ desktopLeftSubBtn
                             }]
                     }
-                    else if(key == "ContactBtnLeft")
+                    else if(key == "TechBtnLeft")
                     {
                         return [key, {
                             ...value,
@@ -225,17 +225,17 @@ function MainNavBar()
             console.log("you have clicked MeBtn " + btnGroup.get(e.id)?.id)
             console.log(btnGroup)
             break;
-            case "ContactBtnLeft":
+            case "TechBtnLeft":
             targetBtn = btnGroupCopy.get(e.id)
             switch(e.btnState)
             {         
                 case BtnState.ACTIVE:
-                console.log("You cannot click on ContactBtn when its active wtf")           
+                console.log("You cannot click on TechBtn when its active wtf")           
                 break;
                 case BtnState.UNACTIVE:
                 newBtnGroup = new Map<string, button>(Array.from(btnGroupCopy.entries()).map(([key, value]) => {
                     setSectionState(SectionState.CONTACTSECTION)
-                    if(key == "ContactBtnLeft")
+                    if(key == "TechBtnLeft")
                     {
                         setLastSelectId(e.id)
                         return [key, {
