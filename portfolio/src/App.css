@@ -7,6 +7,7 @@ html, body {
     overflow-y: hidden;
 }
 
+
 header, footer
 {
   border-top: none !important;
@@ -46,12 +47,6 @@ li
   margin: 1em 1em 1em 1em;
 }
 
-.smallIcon
-{
-  max-width: 80px;
-  margin: 0.5em 0.5em 0.5em 0.5em;
-}
-
 .ContactViewRow
 {
   display: flex;
@@ -67,15 +62,6 @@ h1
 h2, h3
 {
   font-size: 20px;
-}
-
-.toolSection
-{
-  margin-left: 1em;
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: repeat(4, 90px);
-  grid-template-rows: repeat(4, 90px);
 }
 
 .bioSection
