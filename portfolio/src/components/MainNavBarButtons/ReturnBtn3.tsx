@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { StringBtnProp } from "../../modules/interfaces";
 import MainBtn from "./MainBtn";
 
-let returnBtnClass = " desktopRight z-20 order-4 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center border-hidden rounded-md "
+let returnBtnClass = " z-20 order-4 skew-x-smallReverse max-xl:w-56 max-xl:h-16 xl:w-48 xl:h-24 max-xl:absolute max-xl:-bottom-2 max-xl:-left-6 hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center border-hidden rounded-md "
 
-function ReturnBtn3({state, setState, previousState}:StringBtnProp)
+function ReturnBtn3({state, setState, previousState, isDesktop}:StringBtnProp)
 {
 	let className = returnBtnClass
 	if(state == "MainBtn")

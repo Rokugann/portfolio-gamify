@@ -1,9 +1,9 @@
 import { StringBtnProp } from "../../modules/interfaces";
 import MeView from "../MeView";
 
-let meBtnClass = " desktopLeft z-20 order-0 w-48 h-24 hover:w-64 hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center bg-Idle hover:bg-MeBtn border-hidden rounded-md "
+let meBtnClass = " z-20 order-0 max-xl:w-[80%] max-xl:h-16 xl:w-48 xl:h-24 hover:w-64 hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center bg-Idle hover:bg-MeBtn border-hidden rounded-md "
 
-function MeBtn({state, setState, previousState}:StringBtnProp)
+function MeBtn({state, setState, previousState, isDesktop}:StringBtnProp)
 {
 	let className = meBtnClass
 
@@ -13,10 +13,10 @@ function MeBtn({state, setState, previousState}:StringBtnProp)
 		className = meBtnClass
 		break;
 		case "TechBtn":
-		className = "invisible" + meBtnClass
+		className = "hidden" + meBtnClass
 		break;
 		case "Mebtn":
-		className = "invisible" + meBtnClass
+		className = "hidden" + meBtnClass
 		break;
 		case "FrontBtn":
 		className = "hidden" + meBtnClass
@@ -31,10 +31,10 @@ function MeBtn({state, setState, previousState}:StringBtnProp)
 		className = "hidden" + meBtnClass
 		break;
 		case "":
-		className = "invisible" + meBtnClass
+		className = "hidden" + meBtnClass
 		break;
 		default:
-		className = "invisible" + meBtnClass
+		className = "hidden" + meBtnClass
 		console.log("invalid state value or unimplemented stateValue")
 		break;
 	}

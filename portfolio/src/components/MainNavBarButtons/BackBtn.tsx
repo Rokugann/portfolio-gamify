@@ -1,9 +1,9 @@
 import { StringBtnProp } from "../../modules/interfaces";
 import VerticalCarousel from "../VerticalCarousel";
 
-let thisBtnClass = " desktopRight justify-end self-center w-48 h-24 hover:w-64 hover:cursor-pointer transition-hoverScale ease-in-out duration-300  mr-[-2em] rounded-md border-hidden order-4 z-30 bg-Idle hover:bg-BackBtn "
+let thisBtnClass = " justify-end self-center max-xl:w-[80%] max-xl:h-16 xl:w-48 xl:h-24 hover:w-64 hover:cursor-pointer transition-hoverScale ease-in-out duration-300  xl:mr-[-2em] rounded-md border-hidden order-4 z-30 bg-Idle hover:bg-BackBtn "
 
-function BackBtn({state, setState, previousState}:StringBtnProp)
+function BackBtn({state, setState, previousState, isDesktop}:StringBtnProp)
 {
 	let className = thisBtnClass
 
@@ -31,10 +31,10 @@ function BackBtn({state, setState, previousState}:StringBtnProp)
 		className = "hidden " + thisBtnClass
 		break;
 		case "":
-		className = "invisible" + thisBtnClass
+		className = "hidden" + thisBtnClass
 		break;
 		default:
-		className = "invisible" + thisBtnClass
+		className = "hidden" + thisBtnClass
 		console.log("invalid state value or unimplemented stateValue")
 		break;
 	}

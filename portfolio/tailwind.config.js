@@ -37,5 +37,10 @@ export default {
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      backgroundColor: ['hover']
+    },
+  },
 }
 
