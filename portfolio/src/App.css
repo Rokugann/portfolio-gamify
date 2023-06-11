@@ -21,6 +21,7 @@ li
 
 .desktopLeft
 {
+  transform: skew(15deg);
   transition: width 0.25s;
   transition: color 0.25s;
   box-shadow: -4px 0px 0px #000000, -4px 0px 0px #000000;
@@ -30,6 +31,7 @@ li
 {
   transition: width 0.25s;
 /*  transition: color 0.25s;*/
+  transform: skew(-15deg);
   box-shadow: 4px 0px 0px #000000, 4px 0px 0px #000000;
 }
 
