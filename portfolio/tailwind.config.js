@@ -8,14 +8,15 @@ export default {
     extend: {
       colors: {
         'CenterBand': "#A4A3A3",
-        'MainColor': "#F2F2F2",
-        'MainBtn' :'#D9D9D9',
-        'FrontBtn': "#ED3354",
-        'GameBtn': '#91BC18',
-        'BackBtn': '#328BA9',
-        'TechBtn': '#BB8E6E',
-        'MeBtn': '#596E5C',
-        'Idle': '#302E38' 
+        'MainColor': "#02003B",
+        'MainBtn' :'#333366',
+        'FrontBtn': "#B020F0",
+        'GameBtn': '#FFFFF0',
+        'BackBtn': '#22FF00',
+        'TechBtn': '#00F3FF',
+        'MeBtn': '#FF007B',
+        'Idle': '#4E5662',
+        'fontColor': 'E0E0E0'
       },
       backgroundImage: {
         "OctogoneFrame": "url('/public/Vector.svg')"
