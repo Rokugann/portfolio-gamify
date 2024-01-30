@@ -2,14 +2,13 @@ import { Project, StringBtnProp } from "../modules/interfaces"
 import projectRegistry from "../assets/projects/projectRegistry"
 import { useEffect, useState } from "react"
 import VCarouselItem from "./VCarouselItem"
-import CarouselFrame from "./CarouselFrame"
 import FinalMenu from "./FinalMenu"
 import { debug } from "console"
 
 const processedRegistry:Array<Project> = []
 projectRegistry.forEach((element) => processedRegistry.push(element))
 
-let carouselFrameClass = " absolute z-0 h-full w-full skew-x-veryBig bg-MainColor border-8 border-solid border-t-0 border-b-0 "
+let carouselFrameClass = " shadow-revertNeonGlow absolute z-0 h-full w-full skew-x-veryBig bg-MainColor border-8 border-solid border-t-0 border-b-0 "
 
 function VerticalCarousel({state, setState, previousState}:StringBtnProp)
 {
@@ -85,7 +84,6 @@ function VerticalCarousel({state, setState, previousState}:StringBtnProp)
     }
     else
     {
-        console.log(currentProject);
         return(
             <>
                 {processedRegistry.map((element) => {if(element.id == currentProject)

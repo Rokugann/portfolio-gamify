@@ -25,27 +25,28 @@ function FinalMenu({project, state, setState, previousState}:FinalMenuProps)
             break;
         }
 
-    let codeViewCadran = isCodeView ? "justify-self-start bg-red-900" : "justify-self-end bg-blue-900"
-    let codeViewBtnClass = isCodeView ? " order-1 h-full" : " order-0 h-3/4"
-    let viewViewBtnClass = isCodeView ? " order-0 h-3/4" : " order-1 h-full"
-    let baseViewBtnClass = "desktopLeft shadow-leftBold -mx-2 flex-1 hover:scale-y-110 skew-x-smallReverse hover:cursor-pointer rounded-md border-hidden "
+    let codeViewBtnClass = isCodeView ? " order-1 h-full bg-" + previousState: " order-0 h-4/5 bg-Idle"
+    let viewViewBtnClass = isCodeView ? " order-0 h-4/5 bg-Idle": " order-1 h-full bg-" + previousState
+    let baseViewBtnClass = " text-black desktopLeft shadow-neonGlow hover:shadow-dualNeonGlow -mx-2 -my-2 flex-1 hover:scale-y-110 skew-x-smallReverse hover:cursor-pointer rounded-md border-hidden "
     return(
-        <>  <div className=" flex absolute w-[70%] h-[100%] z-40 right-0">
-                <div className="relative w-[90%] h-[90%] self-center mx-auto z-40 bg-zinc-900/80 text-white rounded-xl p-16">
+        <>  <section id="section_area" className=" flex absolute w-[70%] h-[100%] z-40 right-0">
+                <div 
+                id="btn_and_content_area" 
+                className="relative w-[90%] h-[90%] self-center mx-auto z-40 bg-Idle text-FontColor rounded-xl p-16">
                     <div id="btnGrp" className="fixed bottom-0 -right-4 flex items-end w-[30%] h-[10%]">
                         <button id="showCode" 
-                        className={codeViewBtnClass + " " + baseViewBtnClass + " bg-" + previousState}
+                        className={baseViewBtnClass + " " + codeViewBtnClass}
                         onClick={() => setIsCodeView(true)}>Code</button>
                         <button id="showView" 
-                        className={viewViewBtnClass + " " + baseViewBtnClass + " bg-" + previousState}
+                        className={baseViewBtnClass + " " + viewViewBtnClass}
                         onClick={() => setIsCodeView(false)}>View</button>
                     </div>
-                    <div className="overflow-y-scroll h-full w-full">
+                    <div id="display_area" className="overflow-y-scroll h-full w-full">
                         {isCodeView? <project.code /> : <project.view />}
                     </div>
                 </div>
-            </div>
-            <div className={bgClass}></div>
+            </section>
+            <div id="section_background" className={bgClass}></div>
         </>
     )
 }

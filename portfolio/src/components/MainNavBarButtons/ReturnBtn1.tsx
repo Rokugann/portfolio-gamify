@@ -1,8 +1,8 @@
 import { StringBtnProp } from "../../modules/interfaces";
 
-let returnBtnClass = " z-20 max-xl: max-xl:w-16 max-xl:h-16 xl:w-48 xl:h-24 hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center border-hidden rounded-md "
+let returnBtnClass = " shadow-dualNeonGlow desktopLeft z-20 o-1 w-[200px] h-[100px] hover:w-[300px] hover:cursor-pointer transition-hoverScale ease-in-out duration-300 self-center border-hidden rounded-md "
 
-function ReturnBtn1({state, setState, previousState, isDesktop}:StringBtnProp)
+function ReturnBtn1({state, setState, previousState}:StringBtnProp)
 {
 	let className = returnBtnClass
 	if(state == "MainBtn")

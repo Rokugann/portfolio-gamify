@@ -4,34 +4,117 @@ import firebaseChatAppDisplay from "./display.svg"
 function firebaseChatAppProjectView()
 {
     return(
-        <div>firebaseChatAppProject PlaceHolder</div>
+        <div><img src="/public/flyp.png" /></div>
     )
 }
 
 function firebaseChatAppProjectCode()
 {
     return (
-        <div>
+        <pre className="bg-transparent">
+            {
+`<!--Nav desktop-->
+<header class="fixed flex flex-col my-24 p-2 pb-12 gap-6 space-y-8 ml-8 z-40 text-center text-slate-300 text-xl bg-slate-900/90 border-[2px] border-zinc-900 rounded-full shadow-topLargeGray max-xl:hidden"> 
+<a href={~p"/catalog"} class="flex">
+<div class="w-24 aspect-square rounded-full bg-white">
+  <img src={~p"/images/flyp.svg"} class="z-30" />
+</div>
+</a>
+<nav class="flex flex-col items-center gap-4 grow">
+  <a href={~p"/catalog"}>
+    <button class="flex flex-col items-center text-sm hover:text-flyp-wine-400 font-semibold tracking-wider">
+      <.icon name="hero-book-open" class="w-8 h-8"/>Catalog
+    </button>
+  </a>
+</nav>
+<footer class="leading-16 text-sm mx-auto items-center flex flex-col text-slate-400" >
+  <a class="hover:underline decoration-2 tracking-wider" href="contact_page">Mentions</a>
+  <a class="hover:underline decoration-2 tracking-wider" href="contact_page">Help</a>
+</footer>
+  <!-- Ici les autres composants de la navigation-->
+</header>
+<!--End nav desktop-->
+<!-- Content section -->
+<section class="xl:ml-36">
+ <!--top bar-->
+<div class="fixed rounded-full shadow-topLargeGray w-80 z-30 top-2 right-2 bg-gray-900/90 p-2 text-slate-300 hidden xl:flex backdrop-blur-xl">
+  <form class="ml-2 flex flex-1">
+    <button><.icon name="hero-magnifying-glass" class="w-6 h-6"/></button>
+    <input class="grow bg-transparent border-none" type="text" placeholder="Search"/>
+  </form>
+  <button id="user-menu" phx-click={toggle_dropdown("#user-dropdown")} class="flex w-8 h-8 self-center"><.icon name="hero-user-circle" class="h-full w-full"/></button>
+  <div></div>
+</div>
+<!--End top bar-->
+<main class="pt-8 pb-36 xl:py-20 sm:px-6 lg:px-8">
+  <%= @inner_content %>
+</main>
+</section>
+<!-- End Content section -->
+<!--Nav mobile-->
+<div class="pb-3 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-flyp-wine-500 via-flyp-wine-600 to-flyp-wine-800 py-4 shadow-topLargeGray border-t-4 border-t-yellow-400 fixed z-40 right-0 left-0 bottom-0 xl:hidden text-center text-xl grid grid-rows-1 grid-cols-3 justify-items-center items-center text-flyp-wine-900">
+<div class="h-10 flex items-center">
+  <button><.icon name="hero-magnifying-glass" class="w-6 h-6"/></button>  
+  <a href={~p"/catalog"}>
+    <button class="hover:text-yellow-400">
+      <.icon name="hero-book-open" class="w-8 h-8"/>
+    </button>
+  </a>
+</div>
+<a href={~p"/catalog"} class="max-md:grow p-1 rounded-full shadow-md shadow-flyp-wine-700 border border-flyp-wine-600 bg-gradient-to-b from-flyp-wine-700 to-flyp-wine-600">
+  <div class="w-14 h-14 p-1 rounded-full bg-gray-100 shadow-inner shadow-zinc-900">
+    <img src={~p"/images/flyp.svg"} class="z-30" />
+  </div>
+</a>
+<div class="h-10 flex items-center">
+  <button phx-click={toggle_dropdown("#user-dropdown")}><.icon name="hero-user-circle" class="w-8 h-8"/></button>
+  <button><.icon name="hero-ellipsis-vertical" class="w-8 h-8"/></button>
+</div>
+</div>
+<!--End Nav mobile-->
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lacus enim. Aenean id magna auctor, molestie ligula sed, imperdiet ipsum. Proin malesuada quam felis, sit amet sagittis metus finibus ac. Aenean in venenatis libero, at varius urna. Proin faucibus lobortis orci sit amet rhoncus. Donec pharetra neque at velit lobortis vulputate. Donec interdum luctus enim, eget vulputate augue convallis euismod. Pellentesque sagittis nisl tellus, bibendum hendrerit quam tempus vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas efficitur odio a erat aliquam, nec rhoncus purus posuere.
-
-Sed justo nibh, auctor non justo sit amet, facilisis facilisis turpis. In hac habitasse platea dictumst. Donec non ornare turpis, a iaculis ligula. Vestibulum mollis interdum quam eget blandit. Proin eleifend nunc sollicitudin, vehicula ante eget, rutrum ipsum. Nam ornare consectetur iaculis. Nulla tempus elementum rutrum. Quisque fringilla orci odio, ac dictum nisi maximus suscipit. Sed rutrum nunc dapibus, blandit est tincidunt, dictum lacus.
-
-Integer dapibus elit a massa lacinia, a malesuada metus blandit. Praesent pharetra tellus ut orci tincidunt euismod. Etiam id interdum sem. Aliquam lectus ante, pretium eu sapien eu, euismod luctus lectus. Nunc laoreet finibus massa, non interdum nulla accumsan quis. Ut ultricies leo sed ligula faucibus, a cursus tellus dignissim. Nunc id purus tellus. Vestibulum sit amet tellus odio. Integer fringilla nibh velit, eu mattis risus eleifend eu. Sed massa quam, fermentum congue feugiat ac, facilisis non tortor. Integer erat arcu, sollicitudin sed enim vel, dapibus porta augue.
-
-Ut vel nunc eu nisl maximus venenatis non at diam. Integer aliquet placerat arcu quis imperdiet. Mauris condimentum risus in leo mollis, mollis efficitur risus euismod. Nulla ac tortor semper, accumsan ipsum vitae, viverra metus. Aliquam auctor, erat at fermentum fermentum, velit tortor vehicula nisi, volutpat aliquet risus orci ac tortor. Quisque non augue sem. Praesent vitae sagittis lectus, quis sagittis turpis. Aliquam augue eros, auctor id rutrum id, bibendum a neque. Donec sed fringilla mi, ultrices commodo urna. Curabitur erat nibh, mollis at gravida nec, pharetra vitae augue. Nam aliquet libero enim, id fermentum libero venenatis non. Morbi ut erat fermentum, sagittis tellus ac, vestibulum sapien. Praesent ullamcorper ex erat, euismod condimentum lorem tempor eget. Sed augue diam, ultricies et pharetra vitae, hendrerit in felis. Donec neque sapien, porta eu efficitur et, finibus at nisl.
-
-Maecenas accumsan massa eget iaculis dignissim. In a luctus arcu, ac faucibus turpis. Aenean et nisi at nunc maximus consequat. Suspendisse sapien nulla, rhoncus non urna non, fringilla consectetur ex. Quisque ac lacinia leo. Etiam hendrerit, eros at euismod placerat, neque tortor cursus eros, id luctus risus dolor id est. Curabitur condimentum molestie efficitur. Nullam maximus, magna non dictum auctor, mauris sapien ultricies libero, at tincidunt arcu mauris cursus lorem. Quisque dui orci, interdum congue dui in, elementum suscipit libero. Suspendisse nibh ante, eleifend id libero sit amet, sagittis sagittis elit. Sed lacinia est non dui malesuada, non gravida ex varius. Cras egestas, orci ac tempus interdum, lectus leo rutrum risus, eget suscipit tellus tellus eu justo. In nunc felis, sollicitudin sed interdum in, rutrum vitae neque. Integer sodales arcu non risus sollicitudin iaculis. Integer velit ex, placerat ac arcu sed, pretium laoreet augue. Pellentesque fringilla felis sit amet justo porttitor ullamcorper.
-
-Cras mollis ipsum non eleifend cursus. Cras erat neque, molestie eu tellus ac, mollis pellentesque mi. Sed porttitor ex convallis sapien ullamcorper, vitae laoreet dui ullamcorper. Pellentesque blandit finibus efficitur. Ut auctor, leo in elementum maximus, dolor mauris gravida metus, a lobortis urna augue eget ligula. In sit amet tellus vel augue consequat rhoncus vel non metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus placerat lorem quis nisi faucibus, eget dictum velit porttitor. Etiam gravida volutpat egestas. Sed aliquet mi eu accumsan posuere. Cras congue iaculis est, ut dignissim augue lobortis quis. Cras at ipsum sollicitudin, ultricies ex in, tristique ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse facilisis mi nec quam volutpat porta. Praesent et eros vel nulla tristique mattis eget non ipsum.
-
-Pellentesque magna turpis, sagittis non nibh eget, facilisis finibus nulla. Sed feugiat non velit in pharetra. Fusce fermentum bibendum metus, id tempor nibh cursus in. Praesent placerat consectetur ligula, vel commodo nulla tristique ultrices. Nam consectetur luctus sodales. Phasellus rutrum facilisis congue. Quisque euismod nulla vitae tellus sollicitudin, sed euismod odio fringilla. Morbi ac sodales est, ut molestie diam. Nam non lacus vel ex commodo bibendum at vel turpis.
-
-Mauris quis tellus nec erat tempor ultrices vitae eu enim. Sed mattis velit in viverra sodales. Nunc eget aliquet urna. Nulla dapibus, dui vel lacinia egestas, mi turpis faucibus orci, eget scelerisque ligula erat ut ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce elementum elit pretium nunc lobortis, vitae ultricies quam luctus. Praesent eu nulla eleifend, congue nisl id, hendrerit ex. Etiam dapibus pellentesque justo non consectetur. Praesent tincidunt nec nibh posuere suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent accumsan interdum fringilla. Integer faucibus feugiat leo nec scelerisque. Proin quis dolor dapibus ligula lacinia scelerisque. Donec consequat venenatis neque.
-
-Sed ornare a orci et tincidunt. Curabitur ac mollis metus, eu congue felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quis velit eu nulla imperdiet molestie. Sed sodales quis enim quis elementum. Morbi laoreet leo ut augue pellentesque interdum. Curabitur pulvinar facilisis feugiat. Sed pulvinar porttitor ultricies. Donec efficitur ultricies venenatis. Sed tempus gravida lorem vel suscipit. Suspendisse augue enim, tempor vitae tellus in, ultrices iaculis ex. Sed pellentesque justo a est lobortis rutrum. Cras quis posuere neque. Integer arcu sapien, luctus vel orci sed, mattis faucibus quam.
-
-Fusce odio felis, pharetra et commodo sit amet, ultrices nec dui. Aenean tincidunt, enim a posuere vehicula, sapien magna mollis diam, a tempus leo dui ut urna. Nam pretium mauris at dolor scelerisque hendrerit. Cras ac ligula id nisl consequat porta. Curabitur congue leo nec augue egestas, quis malesuada leo posuere. Maecenas sodales enim mauris, ac lobortis elit pharetra et. Nam congue ligula lectus, eu ultrices lectus vestibulum ut. Quisque sodales arcu in tellus posuere vehicula. Nullam interdum orci ligula, in tempor magna congue id. Pellentesque ultricies felis quis est placerat dapibus. </div>
+<!-- User menu dropdown -->
+<.backdrop close_position={:top_right} phx-click={toggle_dropdown("#user-dropdown")}/>
+<.responsive_dropdown
+:if={@current_user} 
+id="user-dropdown"
+class="xl:top-14 xl:right-6 xl:rounded-t-none"
+>
+<:header>
+  <p class="font-semibold"><%= @current_user.email %></p>
+  <div :if={@current_user.tier == :free} class="text-xs font-bold space-x-4 p-2">
+    <span class="text-gray-500 uppercase">
+      <%= @current_user.tier %> tier
+    </span>
+    <.link class="underline transform duration-150 hover:text-flyp-wine-500 hover:-rotate-6">
+      Subscribe
+    </.link>
+  </div>
+  <span :if={@current_user.tier != :free} class="text-gray-500 text-xs font-bold uppercase">
+    <%= @current_user.tier %> tier
+  </span>
+</:header>
+<div class="py-4">
+  <.stackable_button 
+    title="Settings" 
+    icon="hero-cog-8-tooth-solid" 
+    navigate={~p"/user-settings"}
+    align={:left}
+  />
+</div>
+<:footer>
+  <button class="p-1 max-xl:px-8 rounded-full hover:text-flyp-wine-700">
+    <.link
+      href={~p"/logout"}
+      method="delete">
+      <.icon name="hero-power-solid" class="w-6 h-6"/>
+    </.link>
+  </button>
+</:footer>
+</.responsive_dropdown>
+<!-- End user menu dropdown -->`
+            }
+        </pre>
     )
 }
 

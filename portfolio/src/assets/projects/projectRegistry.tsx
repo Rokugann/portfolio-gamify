@@ -10,7 +10,5 @@ projectRegistry.set("firebaseChatAppProject", {id:"firebaseChatAppProject", disp
 projectRegistry.set("firebaseChatAppProject2", {id:"firebaseChatAppProject2", display:firebaseChatAppCardDisplay, code:firebaseChatAppProjectCode, view:firebaseChatAppProjectView})
 projectRegistry.set("firebaseChatAppProject3", {id:"firebaseChatAppProject3", display:firebaseChatAppCardDisplay, code:firebaseChatAppProjectCode, view:firebaseChatAppProjectView})
 projectRegistry.set("firebaseChatAppProject4", {id:"firebaseChatAppProject4", display:firebaseChatAppCardDisplay, code:firebaseChatAppProjectCode, view:firebaseChatAppProjectView})
-// projectRegistry.set("firebaseChatAppProject6", {id:"firebaseChatAppProject6", display:firebaseChatAppCardDisplay, component:firebaseChatAppProject})
-// projectRegistry.set("firebaseChatAppProject7", {id:"firebaseChatAppProject7", display:firebaseChatAppCardDisplay, component:firebaseChatAppProject})
 
 export default projectRegistry

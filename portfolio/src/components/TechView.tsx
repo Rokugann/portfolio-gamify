@@ -5,7 +5,7 @@ function TechView()
 {
     return(
         <>
-        <div className="relative w-[90%] h-[90%] self-center mx-auto z-40 bg-zinc-900/80 text-white rounded-xl p-16 text-MainColor">
+        <div className="relative w-[90%] h-[90%] self-center mx-auto z-40 bg-Idle/80 rounded-xl p-16 text-FontColor">
                 <div className="flex flex-col gap-12 overflow-y-scroll h-full w-full">
                 <h1 className="self-center text-xl font-bold">Mes Techs ! Mes outils ! Mes fidèles amis !</h1>
                 <ul className="w-full flex flex-col gap-12 divide-y-4 divide-slate-500/20">
