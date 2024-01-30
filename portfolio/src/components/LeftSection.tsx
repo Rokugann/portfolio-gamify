@@ -4,7 +4,7 @@ import MeView from "./MeView";
 import TechView from "./TechView";
 
 let LeftSectionFrameClass = "h-full w-[65%] -left-[20%] absolute -skew-x-veryBig bg-MainColor border-8 border-solid border-t-0 border-b-0 "
-let LeftSectionClass = "flex h-full w-[70%] left-0 z-20 -mr-96 ";
+let LeftSectionClass = "flex h-full w-full xl:w-[70%] xl:left-0 z-20 xl:-mr-96 ";
 
 function LeftSection({state, setState, previousState}:StringBtnProp)
 {

@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { StringBtnProp } from "../../modules/interfaces";
-import Contact from "../Contact";
 
-let TechBtnClass = " desktopLeft z-30 order-1 w-48 h-24 hover:w-64 -ml-2 hover:cursor-pointer transition-hoverScale ease-in-out duration-300  self-center bg-Idle hover:bg-TechBtn border-hidden rounded-md "
+let TechBtnClass = " z-30 order-1 max-xl:w-[80%] max-xl:h-16 xl:w-48 xl:h-24 hover:w-64 xl:-ml-2 hover:cursor-pointer transition-hoverScale ease-in-out duration-300  self-center bg-Idle hover:bg-TechBtn border-hidden rounded-md "
 
-function TechBtn({state, setState, previousState}:StringBtnProp)
+function TechBtn({state, setState, previousState, isDesktop}:StringBtnProp)
 {
 	let className = TechBtnClass
 
@@ -23,10 +22,10 @@ function TechBtn({state, setState, previousState}:StringBtnProp)
 		className = TechBtnClass
 		break;
 		case "TechBtn":
-		className = "invisible" + TechBtnClass
+		className = "hidden" + TechBtnClass
 		break;
 		case "MeBtn":
-		className = "invisible" + TechBtnClass
+		className = "hidden" + TechBtnClass
 		break;
 		case "FrontBtn":
 		className = "hidden" + TechBtnClass
@@ -41,10 +40,10 @@ function TechBtn({state, setState, previousState}:StringBtnProp)
 		className = "hidden" + TechBtnClass
 		break;
 		case "":
-		className = "invisible" + TechBtnClass
+		className = "hidden" + TechBtnClass
 		break;
 		default:
-		className = "invisible" + TechBtnClass
+		className = "hidden" + TechBtnClass
 		console.log("invalid state value or unimplemented stateValue")
 		break;
 

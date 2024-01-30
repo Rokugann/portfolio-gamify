@@ -15,60 +15,69 @@ import ReturnBtn3 from "./MainNavBarButtons/ReturnBtn3";
 
 
 
-let NavSectionClass = "flex relative w-[100%] "
+let NavSectionDesktopSpanClass = "flex relative w-[100%] "
+let NavSectionMobileSpanClass = ""
+let NavSectionDesktopClass = "flex relative self-center w-full justify-center text-MainColor"
+let NavSectionMobileClass = 'flex flex-col absolute self-center w-full h-full justify-center bg-blue-600 text-MainColor gap-6'
 
-function MainNavBarV2({state, setState, previousState}:MainNavBarProp)
+function MainNavBarV2({state, setState, previousState, isDesktop}:MainNavBarProp)
 {
 
 
-    let className = NavSectionClass
+    let spanClass = NavSectionDesktopSpanClass
+    let sectionClass = NavSectionDesktopClass
 
     switch(state)
     {
         case "MainBtn":
-            className = NavSectionClass + "justify-center"
+            spanClass = NavSectionDesktopSpanClass + "justify-center"
         break;
         case "TechBtn":
-            className = NavSectionClass + "justify-center"
+            spanClass = NavSectionDesktopSpanClass + "justify-end pr-12"
         break;
         case "MeBtn":
-            className = NavSectionClass + "justify-center"
+            spanClass = NavSectionDesktopSpanClass + "justify-end pr-12"
         break;
         case "FrontBtn":
-            className = NavSectionClass + "justify-start pl-[5em]"
+            spanClass = NavSectionDesktopSpanClass + "justify-start pl-[5em]"
         break;
         case "BackBtn":
-            className = NavSectionClass + "justify-start pl-[5em]"
+            spanClass = NavSectionDesktopSpanClass + "justify-start pl-[5em]"
         break;
         case "GameBtn":
-            className = NavSectionClass + "justify-start pl-[5em]"
+            spanClass = NavSectionDesktopSpanClass + "justify-start pl-[5em]"
         break;
         case "Project":
-            className = NavSectionClass + "justify-start pl-[3em]"
+            spanClass = NavSectionDesktopSpanClass + "justify-start pl-[3em]"
         break;
         case "":
-            className = NavSectionClass + "justify-center"
+            spanClass = NavSectionDesktopSpanClass + "justify-center"
         break;
         default:
-            className = NavSectionClass + "justify-center"
+            spanClass = NavSectionDesktopSpanClass + "justify-center"
             console.log("invalid state value or unimplemented stateValue")
         break;
     }
 
+    if(state != "" && !isDesktop)
+    {
+        sectionClass = NavSectionMobileClass
+        spanClass = NavSectionMobileClass
+    }
+
     return(
         <>
-            <section className="flex flex-grow relative my-auto left-0 right-0 justify-center text-MainColor">
-                <div className="absolute z-0 w-[120%] h-24 bg-CenterBand overflow-x-hidden self-center drop-shadow-[4px_0_4px_rgba(0,0,0,1)]"></div>
-                <span className={className}>
-                    <MeBtn state={state} setState={setState} previousState={previousState}/>
-                    <TechBtn state={state} setState={setState} previousState={previousState}/>
-                    <MainBtn state={state} setState={setState} previousState={previousState}/>
-                    <BackBtn state={state} setState={setState} previousState={previousState}/>
-                    <FrontBtn state={state} setState={setState} previousState={previousState}/>
-                    <GameBtn state={state} setState={setState} previousState={previousState}/>
-                    <ReturnBtn1 state={state} setState={setState} previousState={previousState}/>
-                    <ReturnBtn2 state={state} setState={setState} previousState={previousState}/>
-                    <ReturnBtn3 state={state} setState={setState} previousState={previousState}/>
+            <section id="Main MainNavBar" className={sectionClass}>
+                <span className={spanClass}>
+                    <MeBtn state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <TechBtn state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <MainBtn state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <BackBtn state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <FrontBtn state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <GameBtn state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <ReturnBtn1 state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <ReturnBtn2 state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
+                    <ReturnBtn3 state={state} setState={setState} previousState={previousState} isDesktop={isDesktop}/>
                 </span>
             </section>
         </>

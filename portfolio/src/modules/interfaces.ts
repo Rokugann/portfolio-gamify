@@ -1,5 +1,5 @@
 import React from "react";
-import { BtnState, SectionState } from "./enums";
+import { BtnState, CurrentMedia, SectionState } from "./enums";
 
 
 export interface VerticalCarouselProp
@@ -16,7 +16,8 @@ export interface GeneralMenuProp
 export interface MainNavBarProp {
     state: string,
     setState: React.Dispatch<React.SetStateAction<string>>,
-    previousState: string 
+    previousState: string
+    isDesktop: boolean
 }
 
 export interface button {
@@ -37,6 +38,7 @@ export interface StringBtnProp
     state: string,
     setState: React.Dispatch<React.SetStateAction<string>>,
     previousState: string
+    isDesktop: boolean
 }
 
 export interface CarouselItemProp
